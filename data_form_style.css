@@ -134,10 +134,15 @@ p{
 
 input[type=number]{
     background-color: #1e0584;
+    color:var(--primary-color);
     border: none;
     border-bottom: 1px solid var(--primary-color);
     margin: 5px;
     transition: 0.3s ease;
     padding: 4px;
+}
+
+input[type=number]:active{
+    background-color:#1e0584;
 }
 
