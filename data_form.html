@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Clock</title>
+    <link rel="stylesheet" href="data_form_style.css">
+</head>
+<body>
+    <header>Chess Clock</header>
+
+    <main>
+        <div class="form-container">
+            <form id="data-form" action="./script.js" method="post">
+
+                <div class="time-diff"><label for="same-time">Time different between players</label>
+                <input type="checkbox" name="time-diff" id="same-time">
+                <label class="toggle-btn" for="same-time"></label>
+            </div>
+
+                <div class="minutes"><label for="min">Minutes per player</label>
+                    <div>
+                <input type="number" name="min1" id="min" placeholder="Enter minutes">
+                <input type="number" name="min2" id="min" placeholder="Enter minutes">
+                </div>
+            </div>
+
+                <div class="seconds"><label for="sec">Extra seconds</label>
+                    <div>
+                <input type="number" name="sec1" id="sec" placeholder="Enter seconds">
+                <input type="number" name="sec2" id="sec" placeholder="Enter seconds">
+                </div>
+                </div>
+
+                <div>
+                    <div class="notifications">
+                    <label for="notif">Notification sonores</label>
+                    <input type="checkbox" name="notif-sound" id="notif">
+                    <label class="toggle-btn" for="notif"></label>
+                    </div>
+                    <p>A sound notification will be emitted when clock is switched from a player to another one and also when the game is over</p>
+                </div>
+
+                <div class="spacebar">
+                    <label for="spacebar">Use spacebar for clock switch</label>
+                    <input type="checkbox" name="spacebar-switch" id="spacebar">
+                    <label class="toggle-btn" for="spacebar"></label>
+                </div>
+
+                <button type="submit" id="submit-btn">Go!</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/ad37456720.js" crossorigin="anonymous"></script>
+</body>
+</html>
